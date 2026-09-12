@@ -7,6 +7,7 @@ const rootDir = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
   plugins: [tailwindcss()],
+  base: "/coffee-shop/",
   build: {
     rollupOptions: {
       input: {
