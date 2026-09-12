@@ -127,7 +127,7 @@
       <div
         class="mx-auto grid max-w-6xl items-start gap-12 px-5 py-16 md:grid-cols-2"
       >
-        <div>
+        <div class="order-last md:order-none">
           <h2 class="text-2xl font-semibold">Find us</h2>
           <div class="mt-5 space-y-4 text-sm">
             <p class="flex items-center gap-3">
@@ -197,37 +197,23 @@
             </a>
           </div>
 
-          <h2 class="mt-12 text-2xl font-semibold">Store locator</h2>
-          <div class="mt-5 space-y-4">
-            <div
-              class="rounded-xl border border-border bg-card p-5 shadow-soft"
-            >
-              <h3 class="font-semibold">Old Town Roastery</h3>
-              <p class="mt-1 text-sm text-muted-foreground">
-                12 Maple Lane, Old Town
-              </p>
-              <p class="text-sm text-muted-foreground">Mon–Sun 7am–6pm</p>
-            </div>
-            <div
-              class="rounded-xl border border-border bg-card p-5 shadow-soft"
-            >
-              <h3 class="font-semibold">Riverside Kiosk</h3>
-              <p class="mt-1 text-sm text-muted-foreground">
-                88 Riverwalk, Unit 3
-              </p>
-              <p class="text-sm text-muted-foreground">Mon–Fri 7am–3pm</p>
-            </div>
-            <div
-              class="rounded-xl border border-border bg-card p-5 shadow-soft"
-            >
-              <h3 class="font-semibold">Northside Cafe</h3>
-              <p class="mt-1 text-sm text-muted-foreground">450 Birch Avenue</p>
-              <p class="text-sm text-muted-foreground">Mon–Sun 7am–5pm</p>
-            </div>
+          <h2 class="mt-12 text-2xl font-semibold">Visit Us</h2>
+          <div
+            class="mt-5 overflow-hidden rounded-xl border border-border bg-card shadow-soft"
+          >
+            <iframe
+              title="Map showing the Copper Kettle Coffee location"
+              src="https://www.google.com/maps?q=40.7128,-74.0060&z=15&output=embed"
+              class="h-48 w-full border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
 
-        <div class="rounded-2xl border border-border bg-card p-8 shadow-soft">
+        <div
+          class="order-first rounded-2xl border border-border bg-card p-8 shadow-soft md:order-none"
+        >
           <h2 class="text-2xl font-semibold">Send a message</h2>
           <form class="mt-6 space-y-4" action="#" method="post">
             <div>
