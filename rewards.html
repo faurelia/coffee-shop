@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join Copper Kettle Rewards: earn points on every order and redeem them for free drinks and treats."
+    />
+    <meta property="og:title" content="Rewards — Copper Kettle Coffee" />
+    <meta
+      property="og:description"
+      content="Earn points on every order and redeem free drinks."
+    />
+    <title>Rewards — Copper Kettle Coffee</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur"
+    >
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
+      >
+        <a href="/index.html" class="flex items-center gap-2 text-foreground">
+          <span
+            class="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground"
+          >
+            <i data-lucide="coffee" class="size-4"></i>
+          </span>
+          <span class="font-display text-xl font-semibold tracking-tight">
+            Copper Kettle
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-8 md:flex">
+          <a
+            href="/menu.html"
+            class="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Menu
+          </a>
+          <a
+            href="/about.html"
+            class="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            About
+          </a>
+          <a
+            href="/gift-cards.html"
+            class="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Gift Cards
+          </a>
+          <a
+            href="/rewards.html"
+            class="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground text-primary"
+          >
+            Rewards
+          </a>
+          <a
+            href="/contact.html"
+            class="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
+          >
+            Contact Us
+          </a>
+        </nav>
+
+        <button
+          id="menu-toggle"
+          class="rounded-md p-2 text-foreground md:hidden"
+          aria-label="Toggle navigation"
+          aria-controls="mobile-navigation"
+          aria-expanded="false"
+          type="button"
+        >
+          <i data-lucide="menu" class="size-5"></i>
+        </button>
+      </div>
+
+      <nav
+        id="mobile-navigation"
+        class="hidden flex flex-col gap-1 border-t border-border px-5 pb-4 md:hidden"
+      >
+        <a
+          href="/menu.html"
+          class="rounded-md px-2 py-2 text-sm font-medium text-foreground"
+        >
+          Menu
+        </a>
+        <a
+          href="/about.html"
+          class="rounded-md px-2 py-2 text-sm font-medium text-foreground"
+        >
+          About
+        </a>
+        <a
+          href="/gift-cards.html"
+          class="rounded-md px-2 py-2 text-sm font-medium text-foreground"
+        >
+          Gift Cards
+        </a>
+        <a
+          href="/rewards.html"
+          class="rounded-md bg-muted px-2 py-2 text-sm font-medium text-foreground"
+        >
+          Rewards
+        </a>
+        <a
+          href="/contact.html"
+          class="mt-1 rounded-md bg-primary px-4 py-2 text-center text-sm font-semibold text-primary-foreground"
+        >
+          Contact Us
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-espresso text-primary-foreground">
+        <div class="mx-auto max-w-4xl px-5 py-20 text-center md:py-28">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.2em] text-primary"
+          >
+            Copper Kettle Rewards
+          </p>
+          <h1 class="mt-3 text-4xl font-bold md:text-6xl">
+            Your daily cup, on us more often.
+          </h1>
+          <p class="mx-auto mt-4 max-w-lg text-primary-foreground/75">
+            Earn 2 points per dollar, get a free birthday drink, and unlock
+            members-only perks as you sip.
+          </p>
+          <button
+            type="button"
+            class="mt-8 rounded-full bg-primary px-9 py-3.5 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
+          >
+            Join Now
+          </button>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-5 py-16">
+        <h2 class="text-center text-3xl font-bold">How it works</h2>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-border bg-card p-6 shadow-soft">
+            <div class="flex items-center justify-between">
+              <span
+                class="flex size-11 items-center justify-center rounded-full bg-primary/15 text-primary"
+              >
+                <i data-lucide="user-plus" class="size-5"></i>
+              </span>
+              <span class="font-display text-3xl font-bold text-border">1</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Sign up</h3>
+            <p class="mt-1 text-sm text-muted-foreground">
+              Create your free account in under a minute — no card required.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-border bg-card p-6 shadow-soft">
+            <div class="flex items-center justify-between">
+              <span
+                class="flex size-11 items-center justify-center rounded-full bg-primary/15 text-primary"
+              >
+                <i data-lucide="shopping-bag" class="size-5"></i>
+              </span>
+              <span class="font-display text-3xl font-bold text-border">2</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Order</h3>
+            <p class="mt-1 text-sm text-muted-foreground">
+              Scan your app or give your name when you order, in store or
+              online.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-border bg-card p-6 shadow-soft">
+            <div class="flex items-center justify-between">
+              <span
+                class="flex size-11 items-center justify-center rounded-full bg-primary/15 text-primary"
+              >
+                <i data-lucide="star" class="size-5"></i>
+              </span>
+              <span class="font-display text-3xl font-bold text-border">3</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Earn</h3>
+            <p class="mt-1 text-sm text-muted-foreground">
+              Collect 2 points for every dollar you spend on drinks and bakery.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-border bg-card p-6 shadow-soft">
+            <div class="flex items-center justify-between">
+              <span
+                class="flex size-11 items-center justify-center rounded-full bg-primary/15 text-primary"
+              >
+                <i data-lucide="coffee" class="size-5"></i>
+              </span>
+              <span class="font-display text-3xl font-bold text-border">4</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Redeem</h3>
+            <p class="mt-1 text-sm text-muted-foreground">
+              Cash in points for free drinks, pastries, and members-only treats.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gradient-warm">
+        <div class="mx-auto max-w-6xl px-5 py-16">
+          <h2 class="text-center text-3xl font-bold">Reward levels</h2>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <div
+              class="rounded-2xl border border-border bg-card p-7 text-center shadow-soft"
+            >
+              <h3 class="font-display text-2xl font-semibold text-primary">
+                Bean
+              </h3>
+              <p
+                class="mt-1 text-sm font-semibold uppercase tracking-wide text-muted-foreground"
+              >
+                0–199 pts
+              </p>
+              <p class="mt-3 text-sm text-muted-foreground">
+                Birthday drink, early menu access
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-border bg-card p-7 text-center shadow-soft"
+            >
+              <h3 class="font-display text-2xl font-semibold text-primary">
+                Roast
+              </h3>
+              <p
+                class="mt-1 text-sm font-semibold uppercase tracking-wide text-muted-foreground"
+              >
+                200–499 pts
+              </p>
+              <p class="mt-3 text-sm text-muted-foreground">
+                Free size upgrades, double-point days
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-border bg-card p-7 text-center shadow-soft"
+            >
+              <h3 class="font-display text-2xl font-semibold text-primary">
+                Kettle
+              </h3>
+              <p
+                class="mt-1 text-sm font-semibold uppercase tracking-wide text-muted-foreground"
+              >
+                500+ pts
+              </p>
+              <p class="mt-3 text-sm text-muted-foreground">
+                Free drink monthly, first taste of new roasts
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-3xl px-5 py-16">
+        <h2 class="text-xl font-semibold">Terms &amp; conditions</h2>
+        <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Points are earned on qualifying purchases at participating Copper
+          Kettle locations and online. Points have no cash value, cannot be
+          transferred, and expire after 12 months of account inactivity. Reward
+          items are subject to availability and may change without notice. Level
+          status is reviewed quarterly. One account per person; we reserve the
+          right to adjust or cancel accounts in cases of misuse. View the full
+          program terms in store or on your account page.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-border bg-espresso text-primary-foreground">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-12 md:flex-row md:items-start md:justify-between"
+      >
+        <div>
+          <div class="flex items-center gap-2">
+            <span
+              class="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground"
+            >
+              <i data-lucide="coffee" class="size-4"></i>
+            </span>
+            <span class="font-display text-xl font-semibold">
+              Copper Kettle
+            </span>
+          </div>
+          <p class="mt-3 max-w-xs text-sm text-primary-foreground/70">
+            Small-batch coffee, roasted with care and poured with love.
+          </p>
+        </div>
+
+        <nav class="grid grid-cols-2 gap-x-12 gap-y-2 text-sm">
+          <a
+            href="/menu.html"
+            class="text-primary-foreground/80 hover:text-primary-foreground"
+            >Menu</a
+          >
+          <a
+            href="/gift-cards.html"
+            class="text-primary-foreground/80 hover:text-primary-foreground"
+            >Gift Cards</a
+          >
+          <a
+            href="/rewards.html"
+            class="text-primary-foreground/80 hover:text-primary-foreground"
+            >Rewards</a
+          >
+          <a
+            href="/contact.html"
+            class="text-primary-foreground/80 hover:text-primary-foreground"
+            >Contact Us</a
+          >
+        </nav>
+
+        <div class="text-sm text-primary-foreground/60">
+          <p>© 2026 Copper Kettle Coffee Co.</p>
+          <div class="mt-2 flex gap-4">
+            <a href="#" class="hover:text-primary-foreground">Sitemap</a>
+            <a href="#" class="hover:text-primary-foreground">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
