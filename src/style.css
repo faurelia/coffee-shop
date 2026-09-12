@@ -74,7 +74,10 @@
   --ring: oklch(0.674 0.093 60);
   --espresso: oklch(0.283 0.033 45);
   --caramel: oklch(0.674 0.093 60);
+  --caramel-dark: oklch(0.58 0.09 58.73);
   --sage: oklch(0.607 0.037 140);
+  --sage-dark: oklch(0.52 0.04 132.98);
+  --cream: oklch(0.95 0.01 78.1);
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Karla", system-ui, sans-serif;
   --gradient-warm: linear-gradient(
@@ -168,4 +171,122 @@
 
 @utility section-pad {
   padding-block: 5rem;
+}
+
+/* ---------- Gift cards ---------- */
+.giftcard-group {
+  margin-bottom: 64px;
+}
+.giftcard-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.giftcard-group-head h3 {
+  font-size: 24px;
+}
+.giftcard-group-head span {
+  font-size: 14px;
+  color: var(--espresso-soft);
+}
+.giftcard-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.giftcard-row.two-up {
+  grid-template-columns: repeat(2, 1fr);
+}
+.giftcard {
+  aspect-ratio: 1.6/1;
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  color: var(--cream);
+}
+.giftcard::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+.giftcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.giftcard-brand {
+  font-family: var(--serif);
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+.giftcard-icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.85;
+}
+.giftcard-amount {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 500;
+}
+.giftcard-caption {
+  font-size: 13px;
+  opacity: 0.85;
+}
+.giftcard.style-birthday-1 {
+  background: linear-gradient(135deg, var(--primary), var(--caramel));
+}
+.giftcard.style-birthday-2 {
+  background: linear-gradient(135deg, #8c5a34, var(--caramel));
+}
+.giftcard.style-birthday-3 {
+  background: linear-gradient(135deg, var(--espresso), #6b4a3e);
+}
+.giftcard.style-thanks-1 {
+  background: linear-gradient(135deg, var(--sage-dark), var(--sage));
+}
+.giftcard.style-thanks-2 {
+  background: linear-gradient(135deg, #556351, var(--sage));
+}
+.giftcard.style-ncd {
+  background: linear-gradient(135deg, var(--espresso), var(--caramel-dark));
+}
+
+.giftcard-buy {
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--espresso-soft);
+}
+.giftcard-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .giftcard-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .giftcard-row.two-up {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .giftcard-row,
+  .giftcard-row.two-up {
+    grid-template-columns: 1fr;
+  }
 }
